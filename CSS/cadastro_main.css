@@ -15,6 +15,9 @@ main{
         margin-bottom: 1%;
     }
 
+
+/*EMPRESA*/
+
 /* Divisões Pai */
 
 #div_cad_empresa.container{
@@ -121,3 +124,112 @@ height: 70%;
 margin-top: 10px;
 margin-bottom: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ONG*/
+
+/*Divisão pai*/
+
+#div_cad_ong.container{
+
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    
+    padding-left: 1%;
+    padding-right: 1%;
+    
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+
+}
+
+
+
+/*Divisão filho*/
+
+#nome_ong{
+
+    width: 50%;
+
+
+}
+
+#sigla_ong{
+
+width: 20%;
+
+
+
+}
+
+#data_fund{
+
+width: 30%;
+
+
+}
+
+
+
+/*pessoa*/
+
+#pes_resp_ong{
+
+width: 50%;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
