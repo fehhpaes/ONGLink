@@ -14,7 +14,7 @@
         <!-- CSS -->
         <link href="CSS/header.css" rel="stylesheet">
         <link href="CSS/menu.css" rel="stylesheet" >
-        <link href="CSS/main.css" rel="stylesheet">
+        <link href="CSS/cadastro_main.css" rel="stylesheet">
         <link href="CSS/footer.css" rel="stylesheet">
         <link href="CSS/body.css" rel="stylesheet">
 
@@ -75,8 +75,8 @@
     
       
     
-    <div class="b-example-divider"></div>
-
+    
+        
 
 
 
@@ -96,18 +96,190 @@
 
     <main>
       <!--Main-->
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
+      
+
+                  <!--Formulario de  cadastro de empresa-->
+      <div class="container" id="div_cad_empresa">
+        <h1>Cadastre sua empresa</h1>
+           
+        
+        <!--Divisão nome/CNPJ-->
+        <div class="row " >
+            <div class="col-8" id="div_nome_empresa">
+              <label for="nome_empresa">Nome da empresa</label>
+              <p></p>
+              <input type="text" name="nome_empresa" id="nome_empresa" >
+            </div>
+            <div class="col-4">
+              <label for="reg_cnpj">Registro CNPJ</label>
+              <p></p>
+              <input type="text" name="reg_cnpj" id="reg_cnpj">
+            </div>
+
+
+
+            <!-- Divisão contrato social / area de atuação / email-->
+            <div class="row" id="div_empresa_1">
+              <div class="col-4" id="div_cont_social_empresa">
+                <label for="cont_social_empresa">Tipo de contrato social</label>
+                <p></p>
+                <input type="text" name="cont_social_empresa" id="cont_social_empresa">
+              </div>
+              
+            <div class="col-4">
+              <label for="area_atuacao_empresa">Area de atuação</label>
+              <p></p>
+              <input type="text" name="area_atuacao_empresa" id="area_atuacao_empresa">
+            </div>
+            <div class="col-4">
+              <label for="email">E-mail</label>
+              <p></p>
+              <input type="email" name="email" id="email">
+            </div>
+
+          </div>
+
+
+
+
+
+
+            <!--Divisão Pessoa responsavel-->
+            <div class="row" id="div_pessoa">
+              <div class="col-8">
+                <label for="pes_resp_empresa">Pessoa responsável</label>
+                <p></p>
+                <input type="text" name="pes_resp_empresa" id="pes_resp_empresa">
+              </div>  
+              <div class="col-4">
+                <label for="cpf_pes_resp">CPF</label>
+                <p></p>
+                <input type="text" name="cpf_pes_resp" id="cpf_pes_resp">
+              </div>  
+          </div>
+
+
+
+          <!--Divisão endereço / complemento / numero emrpesa-->
+          <div class="row" id="div_endereco_empresa_1">
+            <div class="col-5">
+              <label for="end_principal">Endereço principal</label>
+              <p></p>
+              <input type="text" name="end_principal" id="end_principal">
+
+            </div>
+            <div class="col-5">
+              <label for="end_complemento">Complemento</label>
+              <p></p>
+              <input type="text" name="end_complemento" id="end_complemento">
+
+            </div>
+
+            <div class="col-2">
+              <label for="num_end_principal">Numero</label>
+              <p></p>
+              <input type="text" name="num_end_principal" id="num_end_principal">
+  
+            </div>
+
+          </div>
+
+            
+            <!--Divisão cidade / estado / CEP-->
+          <div class="row" id="div_endereco_empresa_2">
+            <div class="col-4">
+              <label for="cidade">Cidade</label>
+              <p></p>
+              <input type="text" name="cidade" id="cidade">
+
+            </div>
+            <div class="col-4">
+              <label for="estado">Estado</label>
+              <p></p>
+              <input type="text" name="estado" id="estado">
+  
+              
+            </div>
+            <div class="col-4">
+              <label for="cep">CEP</label>
+              <p></p>
+              <input type="text" name="cep" id="cep">
+              
+            </div>
+
+
+
+          </div>
+
+
+
+          <!--Divisão telefones empresa -->
+            <div class="row" id="div_telefone_empresa">
+              <div class="col-6">
+                <label for="tel_1">Telefone 1</label>
+                <p></p>
+                <input type="text" name="tel_1" id="tel_1">
+    
+              </div>
+              <div class="col-6">
+                <label for="tel_2">Telefone 2</label>
+                <p></p>
+                <input type="text" name="tel_2" id="tel_2">
+
+              </div>
+
+            </div>
+
+
+            <!--Divisão sobre empresa-->
+            <div class="row" id="div_sobre_empresa">
+              <div class="col-3">
+
+              </div>
+              <div class="col-6">
+                <label for="sobre_empresa">Sobre minha empresa</label>
+                <p></p>
+                <textarea name="sobre_empresa" id="txt_sobre_empresa"></textarea>
+
+              </div>
+              <div class="col-3">
+
+              </div>
+
+            </div>
+
+
+            
+
+            
+
+
+            
+
+            
+
+
+            
+
+
+      </div>
+
+      <div class="row" id="div_btn_continuar">
+        <div class="col-5">
+
+
+        </div>
+        <div class="col-2">
+          <button id="btn_continuar"> Continuar </button>
+
+        </div>
+        <div class="col-5">
+
+
+        </div>
+        
+      </div>
+      
       
     </main>
     

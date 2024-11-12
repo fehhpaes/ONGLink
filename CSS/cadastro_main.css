@@ -1,0 +1,123 @@
+main{
+        background-color: white;
+
+
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+
+        margin-bottom: 1%;
+    }
+
+/* Divisões Pai */
+
+#div_cad_empresa.container{
+
+border-radius: 20px;
+border-color: black;
+border-style: solid;
+
+padding-left: 1%;
+padding-right: 1%;
+
+
+}
+
+
+#div_sobre_empresa{
+
+padding-bottom: 10px;
+
+}
+
+
+
+
+
+
+/* Divisões Filho */
+
+#nome_empresa{
+
+    width: 90%;
+
+}
+
+#cont_social_empresa, #reg_cnpj, #area_atuacao_empresa, #email{
+
+width: 85%;
+    
+}
+
+
+#pes_resp_empresa, #cpf_pes_resp{
+
+width: 85%;
+
+
+}
+
+#div_empresa1{
+
+margin-left: 0%;
+margin-right: 0%;
+padding-left: 0%;
+padding-right: 0%;
+
+
+}
+
+
+/*endereço*/
+#end_principal, #end_complemento{
+
+width: 85%;
+
+}
+
+#num_end_principal{
+
+width: 50%;
+
+}
+
+#cidade, #estado, #cep{
+
+width: 75%;
+
+}
+
+
+
+/*telefone*/
+
+#tel_1, #tel_2{
+
+width: 50%;
+
+}
+
+
+
+/*sobre*/
+
+#txt_sobre_empresa{
+margin-bottom: 10px;
+width: 70%;
+height: 70%;
+
+}
+
+
+/*botão continuar */
+#div_btn_continuar{
+
+margin-top: 10px;
+margin-bottom: 10px;
+}
