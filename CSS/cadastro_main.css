@@ -98,6 +98,8 @@ width: 75%;
 
 
 
+
+
 /*telefone*/
 
 #tel_1, #tel_2{
@@ -202,7 +204,13 @@ width: 50%;
 }
 
 
+#estado, #div_estado{
 
+justify-content: center;
+justify-items: center;
+text-align: center;
+
+}
 
 
 
