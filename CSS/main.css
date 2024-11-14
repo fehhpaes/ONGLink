@@ -1,3 +1,20 @@
 main{
     background-color: white;
 }
+
+/* Main da Homepage (V)*/
+
+#image_home
+{
+    height: 800px;
+}
+
+#header_vantagens
+{
+    padding-bottom: 20px;
+}
+
+#vantagens li
+{
+    padding-bottom: 30px;
+}
