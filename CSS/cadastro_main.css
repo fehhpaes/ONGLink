@@ -32,6 +32,10 @@ border-style: solid;
 padding-left: 1%;
 padding-right: 1%;
 
+justify-content: center;
+    justify-items: center;
+    text-align: center;
+
 
 }
 
@@ -99,6 +103,11 @@ width: 75%;
 
 }
 
+#estado{
+
+border-color: black;
+
+}
 
 
 
@@ -124,13 +133,14 @@ height: 70%;
 
 
 /*botão continuar */
-#div_btn_continuar{
+#div_row_btn_continuar_empresa{
 
 margin-top: 10px;
 margin-bottom: 10px;
+
+
+
 }
-
-
 
 
 
@@ -154,7 +164,7 @@ margin-bottom: 10px;
 
 /*Divisão pai*/
 
-#div_cad_ong.container{
+#div_cad_ong_tela_1.container{
 
     border-radius: 20px;
     border-color: black;
@@ -215,7 +225,14 @@ text-align: center;
 
 }
 
+ /*botão continuar */
+#div_row_btn_continuar_ong{
 
+   
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
 
 
 
