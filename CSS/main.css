@@ -1,20 +1,152 @@
 main{
-    background-color: white;
+    background-color: #95b95f;
 }
 
-/* Main da Homepage (V)*/
+/* Main da Homepage (Vinicius)*/
+
+#main1, #div_nossos_parceiros
+{
+    background-image:url("https://images.pexels.com/photos/957024/forest-trees-perspective-bright-957024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+body
+{
+    background-color:#84a454;
+}
 
 #image_home
 {
     height: 800px;
+    width: 600px;
+    margin-bottom: 16px;
+    border-radius: 20px;
+}
+
+#main1
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#sub_div_desc
+{
+    display: flex;
+    background-color: #283903a6;
 }
 
 #header_vantagens
 {
-    padding-bottom: 20px;
+    margin-bottom: 40px;
+    background-color:#95b95f;
+    text-align: center;
+    border-radius: 50px;
+}
+
+#desc_home p, #header_vantagens, #vantagens, #div_botao
+{
+    background-color:#2b3710c4;
+    padding: 20px;
+    width: 600px;
+    color: white;
+}
+
+#desc_home
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+#div_imagem_home
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #vantagens li
 {
     padding-bottom: 30px;
+}
+
+#vantagem
+{
+    padding-left: 30px;
+}
+
+#img_havan, #img_votorantim, #img_tvtem, #img_sesc
+{
+    width: 220px;
+    height: 180px;
+    margin-right: 40px;
+}
+
+#div_nossos_parceiros
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+
+}
+
+#sub_div_apoiadores
+{
+    background-color: #283903a6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+#div_nossos_parceiros h3
+{
+    height: 50px;
+    width: 30%;
+    text-align: center;
+    background-color: #2b3710c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#div_apoiadores
+{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #2b3710c4;
+    width: 90%;
+}
+
+#div_botao
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#btn_main1, #btn_main2
+{
+    --bs-btn-bg: #5F8C1B;
+    border: none;
+    width: 300px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
 }
