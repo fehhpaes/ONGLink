@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
         <!-- CSS -->
-        <link href="CSS/header.css" rel="stylesheet">
+        <link href="CSS/header_alt.css" rel="stylesheet">
         <link href="CSS/menu.css" rel="stylesheet" >
         <link href="CSS/main.css" rel="stylesheet">
         <link href="CSS/footer.css" rel="stylesheet">
@@ -34,8 +34,13 @@
         <div class="d-flex align-items-center" id="div_header">
           <form class="w-100 me-3" role="search">
             <img src="img/LOGO ONGLINK 1.png" alt="Logo ONGLink" width="100" id="logo_onglink" border="1">
+            
           </form>
 
+          <div id="botoes_cadastro">
+            <button class="btn btn-success"> Cadastre-se</button>
+            <a href="login.html"><button class="btn btn-success">Login</button></a>
+          </div>
 
             <!--Menu_Sandwich_Bootstrap-->
           <div class="flex-shrink-0 dropdown" >
@@ -73,10 +78,6 @@
         </div>
       </div>
     </header>
-    
-      
-    
-    <div class="b-example-divider"></div>
 
 
 
@@ -95,19 +96,79 @@
 
 
 
-    <main>
+    <main id="main_home">
       <!--Main-->
+
+      <div class="container-fluid" id="main1">
+        <div id="sub_div_desc">
+          
+          <div class="row">
+
+              <div class="col-6" id="div_imagem_home">
+                <img src="img/image_home.jpg" id="image_home">
+              </div>
+              <div class="col-6" id="desc_home">
+                  <h4 id="header_vantagens">Por que sua empresa ou ONG deve estar aqui? </h4>
+                  <ul id="vantagens">
+                      <li>Otimizar investimentos em organizações confiáveis</li>
+                      <li>Figurar entre as empresas que se preocupam com causas sociais</li>
+                      <li>Promover o bem estar social e o fortalecimento dos direitos sociais</li>
+                  </ul>
+
+                      <p>
+                        Visando otimizar o uso de recursos financeiros da sua empresa e fomentar as organizações não governamentais, 
+                        a plataforma ONGlink fornece os recursos e ferramentas ideais para criar a conexão necessária, onde investidores 
+                        podem ter a garantia de que seu projeto social terá um melhor aproveitamento de seus recursos e uma maior visibilidade
+                        pela sociedade, governo e outras empresas.  A plataforma garante que os investidores possam acompanhar o aproveitamento 
+                        dos recursos financeiros, além de oferecer visibilidade para as iniciativas sociais, promovendo uma cultura de responsabilidade 
+                        social corporativa. 
+                      </p>
+
+                      <div id="div_botao">
+                        <h4>
+                          Venha fazer parte da ONGLink!
+                        </h4>
+                        <a href="cadastrar_empresa.html"> <button class="btn btn-success" id="btn_main1"> Cadastre sua Empresa! </button></a>
+                        <a href="cadastrar_ONG_1.html"> <button class="btn btn-success" id="btn_main2">  Cadastre sua ONG!</button> </a>
+                      </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
       <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
-      <div class="b-example-divider"></div>
+
+      <div class="container-fluid" id="div_nossos_parceiros">
+
+        <div id="sub_div_apoiadores">
+            <h3>Nossos Parceiros:</h3>
+
+            <div id="div_apoiadores">
+              <a href="https://www.havan.com.br">
+                  <img src="img/apoiadores/havan-logo-0.png" id="img_havan">
+              </a>
+
+              <a href="https://www.votorantim.sp.gov.br">
+                  <img src="img/apoiadores/Votorantim_Brasao.png" id="img_votorantim">
+              </a>
+
+              <a href="https://jovempan.com.br">
+                  <img src="img/apoiadores/7061-1071_company_import.png" id="img_tvtem">
+              </a>
+
+              <a href="https://www.sescsp.org.br/unidades/sorocaba/">
+                  <img src="img/apoiadores/sesc-logo-F184943794-seeklogo.com.png" id="img_sesc">
+              </a>
+
+            </div>
+        </div>
+
+      </div>
+
+  
       <div class="b-example-divider"></div>
       
     </main>
