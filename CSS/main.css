@@ -19,7 +19,7 @@ body
 #image_home
 {
     height: 800px;
-    width: 600px;
+    width: 500px;
     margin-bottom: 16px;
     border-radius: 20px;
 }
@@ -32,7 +32,7 @@ body
 
 #sub_div_desc
 {
-    display: flex;
+    padding-right: 50px;
     background-color: #283903a6;
 }
 
@@ -74,16 +74,26 @@ body
     padding-bottom: 30px;
 }
 
-#vantagem
+#vantagens
 {
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
-#img_havan, #img_votorantim, #img_tvtem, #img_sesc
+#img_votorantim, #img_tvtem
 {
     width: 220px;
     height: 180px;
-    margin-right: 40px;
+}
+
+#img_havan
+{
+    width: 250px;
+    height: 200px;
+}
+
+#img_sesc
+{
+    width: 250px;
 }
 
 #div_nossos_parceiros
@@ -121,8 +131,10 @@ body
     margin-bottom: 20px;
     padding: 20px;
     display: flex;
-    justify-content: space-evenly;
-    background-color: #2b3710c4;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4c631ac4;
     width: 90%;
 }
 
