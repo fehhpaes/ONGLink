@@ -39,7 +39,6 @@ body
 #header_vantagens
 {
     margin-bottom: 40px;
-    background-color:#95b95f;
     text-align: center;
     border-radius: 50px;
 }
@@ -50,6 +49,12 @@ body
     padding: 20px;
     width: 600px;
     color: white;
+}
+
+#desc_home p
+{
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 #desc_home
@@ -76,7 +81,9 @@ body
 
 #vantagens
 {
-    padding-left: 40px;
+    padding-left: 70px;
+    padding-top: 30px;
+    padding-bottom: 0px;
 }
 
 #img_votorantim, #img_tvtem
@@ -101,7 +108,6 @@ body
     padding-top: 30px;
     padding-bottom: 30px;
     color: white;
-
 }
 
 #sub_div_apoiadores
@@ -116,9 +122,10 @@ body
 
 #div_nossos_parceiros h3
 {
-    height: 50px;
+    height: 60px;
     width: 30%;
     text-align: center;
+    border-radius: 50px;
     background-color: #2b3710c4;
     display: flex;
     flex-direction: column;
@@ -134,7 +141,7 @@ body
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #4c631ac4;
+    background-color: #637b30;
     width: 90%;
 }
 
@@ -153,6 +160,10 @@ body
     border: none;
     width: 300px;
     height: 50px;
+}
+
+#div_botao a
+{
     margin-top: 30px;
     margin-bottom: 20px;
 }
