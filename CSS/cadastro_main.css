@@ -1,8 +1,20 @@
 /*cadastrar_empresa*/
 
+header#header_header.py-3.mb-3.border-bottom{
+
+margin-bottom: 0px;
+
+}
+
+body
+{
+    background-color:#84a454;
+}
+
+
 
 main{
-        background-color: white;
+        background-color: white ;
 
 
         justify-content: center;
@@ -14,35 +26,52 @@ main{
         flex-wrap: wrap;
         flex-direction: column;
 
-
+        
         margin-bottom: 1%;
+
+
+       
     }
 
 
+
+    #par_sep{
+
+        margin-bottom: 2%;
+        margin-top: 2%;
+        
+        
+        
+        }
+
 /*EMPRESA*/
 
-/* Divisões Pai */
+/*Divisão container*/
 
 #div_cad_empresa.container{
 
-border-radius: 20px;
-border-color: black;
-border-style: solid;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
 
-padding-left: 2%;
-padding-right: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
 
-justify-content: center;
+    justify-content: center;
     justify-items: center;
     text-align: center;
 
+    max-width: 50%;
+
+    margin-bottom: 1% ;
+    margin-top: 1%;
 
 }
 
 
 #div_sobre_empresa{
 
-padding-bottom: 10px;
+    padding-bottom: 10px;
 
 }
 
@@ -51,7 +80,7 @@ padding-bottom: 10px;
 
 
 
-/* Divisões Filho */
+/*Divisão dentro container*/
 
 #nome_empresa{
 
@@ -116,7 +145,7 @@ border-color: black;
 
 #tel_1, #tel_2{
 
-width: 50%;
+width: 90%;
 
 }
 
@@ -126,10 +155,35 @@ width: 50%;
 
 #txt_sobre_empresa{
 margin-bottom: 10px;
-width: 70%;
-height: 70%;
+
+
 
 }
+
+#div_sobre_empresa{
+
+margin-left: 0%;
+margin-right: 0%;
+
+
+
+ 
+
+
+}
+
+#div_txt_sobre_empresa{
+
+
+
+
+margin-bottom: 1%;
+
+
+
+}
+
+
 
 
 /*botão continuar */
@@ -162,7 +216,7 @@ margin-bottom: 10px;
 
 /*cadastrar_ONG_1*/
 
-/*Divisão pai*/
+/*Divisão container*/
 
 #div_cad_ong_tela_1.container{
 
@@ -176,16 +230,21 @@ margin-bottom: 10px;
     justify-content: center;
     justify-items: center;
     text-align: center;
+    max-width: 50%;
+
+
+    margin-bottom: 1% ;
+    margin-top: 1%;
 
 }
 
 
 
-/*Divisão filho*/
+/*Divisão dentro container*/
 
 #nome_ong{
 
-    width: 50%;
+    width: 60%;
 
 
 }
@@ -200,7 +259,7 @@ width: 30%;
 
 #data_fund{
 
-width: 50%;
+width: 60%;
 
 
 }
@@ -248,7 +307,7 @@ text-align: center;
 
 
 
-/*Divisões Pai*/
+/*Divisão container*/
 #div_cad_ong_tela2{
     border-radius: 20px;
     border-color: black;
@@ -263,6 +322,9 @@ text-align: center;
 
 max-width: 50%;
 
+margin-bottom: 1% ;
+margin-top: 1%;
+
 
 }
 
@@ -273,7 +335,7 @@ margin-top: 5%;
 
 }
 
-/*Divisões Filho*/
+/*Divisão dentro container*/
 
 #esc_causa_amb, #esc_causa_ani,#esc_causa_edu,#esc_causa_sau,#esc_causa_soc, #esc_causa_out{
 
@@ -285,7 +347,7 @@ margin-top: 5%;
     
 input#esc_causa_out_txt{
 
-width: 200px;
+width: 400px;
 
 }
 
@@ -293,20 +355,13 @@ width: 200px;
 /*Input caixas de texto redes*/
 input#redes_ong_instagram,input#redes_ong_facebook,input#redes_ong_x,input#redes_ong_linkedin{
     
-    width: 200px;
+    width: 400px;
 
 
 
 }
 
-#par_sep_causa_redes{
 
-margin-bottom: 5%;
-margin-top: 5%;
-
-
-
-}
 
 #div_row_btn_continuar_ong_2{
 
