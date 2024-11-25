@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../Desktop/Desenvolvimento Web"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ONGLink"
+	}
+}
