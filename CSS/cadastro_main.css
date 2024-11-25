@@ -138,7 +138,10 @@ border-color: black;
 
 }
 
+#email{
 
+    max-width: 100%;
+}
 
 
 /*telefone*/
@@ -175,7 +178,8 @@ margin-right: 0%;
 #div_txt_sobre_empresa{
 
 
-
+margin-right: 1%;
+padding-right: 1%;
 
 margin-bottom: 1%;
 

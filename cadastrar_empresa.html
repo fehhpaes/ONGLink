@@ -109,15 +109,15 @@
             <div class="col-5" id="div_nome_empresa">
               <label for="nome_empresa">Nome da empresa</label>
               <p></p>
-              <input type="text" name="nome_empresa" id="nome_empresa" required title="Por favor, preencha o seu nome.">
+              <input type="text" name="nome_empresa" id="nome_empresa" required>
             </div>
 
             <div class="col-1"></div>
 
-            <div class="col-4">
+            <div class="col-5">
               <label for="reg_cnpj">Registro CNPJ</label>
               <p></p>
-              <input type="text" name="reg_cnpj" id="reg_cnpj" required>
+              <input type="text" name="reg_cnpj" id="reg_cnpj" placeholder="12.345.678/0001-00" >
             </div>
             <div class="col-1"></div>
         </div>
@@ -143,7 +143,7 @@
             <div class="col-3">
               <label for="email">E-mail</label>
               <p></p>
-              <input type="email" name="email" id="email">
+              <input type="email" name="email" id="email" placeholder="Digite seu e-mail.." >
             </div>
             <div class="col-1"></div>
           </div>
@@ -162,9 +162,9 @@
                 <input type="text" name="pes_resp_empresa" id="pes_resp_empresa">
               </div>  
               <div class="col-4">
-                <label for="cpf_pes_resp">CPF</label>
+                <label for="cpf_pes_resp" >CPF</label>
                 <p></p>
-                <input type="text" name="cpf_pes_resp" id="cpf_pes_resp">
+                <input type="text" name="cpf_pes_resp" id="cpf_pes_resp" placeholder="000.000.000-00">
               </div> 
               <div class="col-1"></div> 
           </div>
@@ -309,7 +309,7 @@
               <div class="col-10" id="div_txt_sobre_empresa" >
                 <label for="sobre_empresa" >Sobre minha empresa</label>
                 <p></p>
-                <textarea name="sobre_empresa" id="txt_sobre_empresa" rows="5" cols="60"></textarea>
+                <textarea name="sobre_empresa" id="txt_sobre_empresa" rows="6" cols="35"></textarea>
 
               </div>
 
@@ -344,7 +344,7 @@
 
           </div>
           <div class="col-10" id="div_btn_continuar_empresa">
-            <button id="btn_continuar" onclick="window.location.href='index.html'" > Continuar </button>
+            <button type="submit" id="btn_continuar" onclick="window.location.href='index.html'" > Continuar </button>
 
           </div>
           <div class="col-1">
@@ -359,7 +359,6 @@
     </main>
     
     
-
 
 
 
