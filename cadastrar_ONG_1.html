@@ -105,7 +105,8 @@
         
         <!--Divisão nome/sigla-->
         <div class="row " >
-            <div class="col-8" id="div_nome_ong">
+          <div class="col-1"></div>
+            <div class="col-6" id="div_nome_ong">
               <label for="nome_ong">Nome da ONG</label>
               <p></p>
               <input type="text" name="nome_ong" id="nome_ong" >
@@ -115,13 +116,15 @@
               <p></p>
               <input type="text" name="sigla_ong" id="sigla_ong" >
             </div>
+            <div class="col-1"></div>
             
 
 
 
             <!-- Divisão data de fundação / email / CNPJ-->
             <div class="row" id="div_ong_1">
-              <div class="col-4" id="div_data_fund">
+              <div class="col-1"></div>
+              <div class="col-3" id="div_data_fund">
                 <label for="data_fund">Data de fundação</label>
                 <p></p>
                 <input type="text" name="data_fund" id="data_fund">
@@ -134,11 +137,13 @@
               </div>
 
 
-            <div class="col-4">
+            <div class="col-3">
               <label for="email">E-mail</label>
               <p></p>
               <input type="email" name="email" id="email">
             </div>
+
+            <div class="col-1"></div>
 
           </div>
 
@@ -149,7 +154,8 @@
 
             <!--Divisão Pessoa responsavel-->
             <div class="row" id="div_pessoa_ong">
-              <div class="col-8">
+              <div class="col-1"></div>
+              <div class="col-6">
                 <label for="pes_resp_ong">Pessoa responsável</label>
                 <p></p>
                 <input type="text" name="pes_resp_ong" id="pes_resp_ong">
@@ -159,19 +165,22 @@
                 <p></p>
                 <input type="text" name="cpf_pes_resp" id="cpf_pes_resp">
               </div>  
+
+              <div class="col-1"></div>
           </div>
 
 
 
           <!--Divisão endereço / complemento / numero ONG-->
           <div class="row" id="div_endereco_ong_1">
+            <div class="col-1"></div>
             <div class="col-5">
               <label for="end_principal">Endereço principal</label>
               <p></p>
               <input type="text" name="end_principal" id="end_principal">
 
             </div>
-            <div class="col-5">
+            <div class="col-4">
               <label for="end_complemento">Complemento</label>
               <p></p>
               <input type="text" name="end_complemento" id="end_complemento">
@@ -185,12 +194,15 @@
   
             </div>
 
+            <div class="col-1"></div>
+
           </div>
 
             
             <!--Divisão cidade / estado / CEP-->
           <div class="row" id="div_endereco_ong_2">
-            <div class="col-4">
+            <div class="col-1"></div>
+            <div class="col-3">
               <label for="cidade">Cidade</label>
               <p></p>
               <input type="text" name="cidade" id="cidade">
@@ -231,14 +243,14 @@
   
               
             </div>
-            <div class="col-4">
+            <div class="col-3">
               <label for="cep">CEP</label>
               <p></p>
               <input type="text" name="cep" id="cep">
               
             </div>
 
-
+            <div class="col-1"></div>
 
           </div>
 
@@ -246,18 +258,21 @@
 
           <!--Divisão telefones ONG -->
             <div class="row" id="div_telefone_ong">
-              <div class="col-6">
+              <div class="col-1"></div>
+              <div class="col-5">
                 <label for="tel_1">Telefone 1</label>
                 <p></p>
                 <input type="text" name="tel_1" id="tel_1">
     
               </div>
-              <div class="col-6">
+              <div class="col-5">
                 <label for="tel_2">Telefone 2</label>
                 <p></p>
                 <input type="text" name="tel_2" id="tel_2">
 
               </div>
+
+              <div class="col-1"></div>
 
             </div>
 
@@ -266,18 +281,25 @@
             <div class="row" id="div_upload_cadastro_ong">
               <h4>Upload de arquivos</h4>
               
-              <div class="col-6">
+              <div class="col-1"></div>
+
+              <div class="col-4">
                 <label for="ata_fundacao_ong">Ata de fundação</label>
                 <p></p>
                 <input type="file" name="ata_fundacao_ong" id="ata_fundacao_ong">
 
               </div>
-              <div class="col-6">
+
+              <div class="col-2"></div>
+
+              <div class="col-4">
                 <label for="estatuto_social_ong">Estatuto social da ONG</label>
                 <p></p>
                 <input type="file" name="estatuto_social_ong" id="estatuto_social_ong"></input>
 
               </div>
+
+              <div class="col-1"></div>
 
             </div>
 
@@ -298,16 +320,16 @@
       </div>
 
       <div class="row" id="div_row_btn_continuar_ong">
-        <div class="col-5">
+        <div class="col-1">
 
 
         </div>
-        <div class="col-2" id="div_btn_continuar_ong">
+        <div class="col-10" id="div_btn_continuar_ong">
           <button id="btn_continuar" onclick="window.location.href='cadastrar_ONG_2.html'" >  Continuar </button>
           
 
         </div>
-        <div class="col-5">
+        <div class="col-1">
 
 
         </div>
