@@ -17,6 +17,7 @@
         <link href="CSS/main.css" rel="stylesheet">
         <link href="CSS/footer.css" rel="stylesheet">
         <link href="CSS/body.css" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/cadastro_main.css">
 
   </head>
 
@@ -104,47 +105,114 @@
 
         <!--Divisão Seleção da causa principal-->
         <div class="row">
-          <div class="col-4" id="div_esc_causa">
+          <div class="col-1"></div>
+          <div class="col-10" id="div_esc_causa">
             <label for="esc_causa">Escolha a causa principal da sua organização</label>
             <p></p>
-            <input type="radio" name="esc_causa" id="esc_causa_amb" value="Ambiental">Ambiental
-            <input type="radio" name="esc_causa" id="esc_causa_ani" value="Animal">Animal
+            <input type="radio" name="esc_causa" id="esc_causa_amb" value="Ambiental">Ambiental                 
+            <input type="radio" name="esc_causa" id="esc_causa_ani" value="Animal">Animal                    
             <input type="radio" name="esc_causa" id="esc_causa_edu" value="Educação">Educação
             <p></p>
             <input type="radio" name="esc_causa" id="esc_causa_sau" value="Saúde">Saúde
             <input type="radio" name="esc_causa" id="esc_causa_soc" value="Social">Social
             <input type="radio" name="esc_causa" id="esc_causa_out" value="Outra">Outra
             <p></p>
-            <label for="esc_causa">Se selecionou a opção "Outra", digite aqui:</label>
-            <p></p>
-            <input type="text" name="esc_causa" id="esc_causa_out_txt">
-
-
           </div>
-          <div class="col-4" id="div_redes_ong_1">
-            <label for="redes_ong_instagram">Link do Instragram</label>
-            <p></p>
-            <input type="url" name="redes_ong_instagram" id="redes_ong_instagram">
-            <p></p>
-            <label for="redes_ong_facebook">Link do Facebook</label>
-            <p></p>
-            <input type="url" name="redes_ong_facebook" id="redes_ong_facebook">
-            <p></p>
-
-          </div>
-          <div class="col-4" id="div_redes_ong_2">
-            <label for="redes_ong_x">Link do X</label>
-            <p></p>
-            <input type="url" name="redes_ong_x" id="redes_ong_x">
-            <p></p>
-            <label for="redes_ong_linkedin">Link do Linkedin</label>
-            <p></p>
-            <input type="url" name="redes_ong_linkedin" id="redes_ong_linkedin">
-            <p></p>
-
+            <div class="col-1"></div>
           </div>
 
-        </div>
+
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-10">
+                <label for="esc_causa">Se selecionou a opção "Outra", digite aqui:</label>
+                <p></p>
+                <input type="text" name="esc_causa" id="esc_causa_out_txt">
+              </div>  
+              <div class="col-1"></div>
+            </div>
+        
+
+
+
+          
+
+
+          <p id="par_sep_causa_redes"></p>
+
+
+
+          <!--redes-->
+          <div class="row" id="row_redes_1">
+            <div class="col-1"></div>
+            <div class="col-10" id="div_redes_ong_1">
+              
+              <label for="redes_ong_instagram" id="lbl_instagram">Link do Instragram <img src="img/icons/instagram_6422200.png" class="bi" width="20" height="20"></label>
+              <p></p>
+              <input type="url" name="redes_ong_instagram" id="redes_ong_instagram">
+              <p></p>
+            </div>
+            <div class="col-1"></div>
+          </div>
+
+
+
+
+          <div class="row" id="row_redes_2">
+            <div class="col-1"></div>
+              <div class="col-10">
+                <label for="redes_ong_facebook" id="lbl_facebook">Link do Facebook <img src="img/icons/social_12942738.png" class="bi" width="20" height="20"></label>
+                <p></p>
+                <input type="url" name="redes_ong_facebook" id="redes_ong_facebook">
+                <p></p>
+              </div>  
+              <div class="col-1"></div>
+          </div>
+
+
+
+
+          <div class="row" id="row_redes_3">
+            <div class="col-1"></div>
+            <div class="col-10" id="div_redes_ong_2">
+              <label for="redes_ong_x" id="lbl_twitter">Link do X <img src="img/icons/twitter_5968830.png" class="bi" width="20" height="20"></label>
+              <p></p>
+              <input type="url" name="redes_ong_x" id="redes_ong_x">
+              <p></p>
+            </div>
+            <div class="col-1"></div>
+          </div>
+
+
+
+
+            <div class="row" id="row_redes_4">
+              <div class="col-1"></div>
+                  <div class="col-10" id="div_redes_ong_2">
+                  <label for="redes_ong_linkedin" id="lbl_linkedin">Link do Linkedin <img src="img/icons/linkedin_3536569.png" width="20" height="20"></label>
+                  <p></p>
+                  <input type="url" name="redes_ong_linkedin" id="redes_ong_linkedin">
+                  <p></p>
+                  </div>
+                  <div class="col-1"></div>
+            </div>  
+          </div>
+           
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="row" id="div_ong_foto_1">
           <h3>Coloque fotos de projetos ja realizados</h3>
           <div class="col-4" id="div_ong_foto_1_2_3">
