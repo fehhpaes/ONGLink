@@ -20,6 +20,7 @@
   {
     display: flex;
     margin-left: 20px;
+    color: white;
   }
   
   #botoes_cadastro
@@ -35,15 +36,11 @@
   
   #botoes_cadastro button
   {
-    margin-right: 10px;
+    margin-right: 30px;
     width: 120px;
     height: 50px;
   }
   
-  #logo_onglink 
-  {
-    color: white;
-  }
   
   
   

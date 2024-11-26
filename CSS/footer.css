@@ -48,6 +48,11 @@ footer, container, #redes_sociais{
 
 }
 
+#links_footer
+{
+  margin-top: 15px;
+  margin-left: 28px;
+}
 
 
 
@@ -64,6 +69,17 @@ footer, container, #redes_sociais{
 
 
 /*Bootstrap*/
+
+@media (min-width: 768px) {
+  .offset-md-1 {
+      margin-left: 68px;
+  }
+}
+
+.list-unstyled
+{
+  padding-top: 5px;
+}
 
 .bd-placeholder-img {
     font-size: 1.125rem;
