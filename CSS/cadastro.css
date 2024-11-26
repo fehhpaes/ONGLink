@@ -279,3 +279,37 @@ input#redes_ong_instagram,input#redes_ong_facebook,input#redes_ong_x,input#redes
     
     
 }
+
+
+
+
+
+
+
+
+
+
+/*Selecionar opção Empresa ou ONG*/
+.container {
+    margin-top: 20px;
+  }
+  .hidden {
+    display: none;
+  }
+
+
+  #data_fund{
+
+width: 120px;
+text-align: center;
+
+  }
+
+
+  #sigla_ong{
+
+width: 50px;
+text-align: center;
+
+
+  }
