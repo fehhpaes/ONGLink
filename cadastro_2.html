@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="MUXN Company">
+        <title>ONGLink - Cadastrar empresa</title>
+    
+        
+      <!--Link Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link href="CSS/header_alt.css" rel="stylesheet">
+        <link href="CSS/menu.css" rel="stylesheet" >
+        <link href="CSS/cadastro.css" rel="stylesheet">
+        <link href="CSS/footer.css" rel="stylesheet">
+        <link href="CSS/body.css" rel="stylesheet">
+
+  </head>
+
+
+  <body>
+
+            
+            
+        <!--Header-->
+        
+    <header class="py-3 mb-3 border-bottom" id="header_header">
+    <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr -1fr;">
+        <div class="d-flex align-items-center" id="div_header">
+        
+        <a href="index.html"><img src="img/LOGO ONGLINK 1.png" alt="Logo ONGLink" width="100" id="logo_onglink" border="1"></a>
+        <form class="w-100 me-3" role="search">
+        </form>
+
+        <div id="botoes_cadastro">
+            <button class="btn btn-success"> Cadastre-se</button>
+            <a href="login.html"><button class="btn btn-success">Login</button></a>
+        </div>
+
+        </div>
+    </div>
+    </header>
+
+
+        <main>
+
+            <div class="container" id="div_cad_container">
+                <h1>Cadastre sua Organização</h1>
+        
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10" id="div_tipo_entidade">
+                        <!--Escolha do tipo de entidade, valor vai ser inserido no tipo de conta em banco de dados 1-ADM, 2-Empresa 3-ONG -->
+                        <label for="tipo_entidade">Escolha o seu tipo de entidade</label>
+                        <p></p>
+                        <input type="radio" name="tipo_entidade" id="empresa" value="2"> Empresa
+                        
+                        <input type="radio" name="tipo_entidade" id="ong" value="3"> ONG
+
+                    </div>
+
+                    <div class="col-1"></div>
+                </div>
+
+                <p id="par_sep"></p>
+
+
+                
+        
+        
+                  
+        
+        
+                  <p id="par_sep">******************************</p>
+        
+        
+        
+                  <!--redes-->
+                  <div class="row" id="row_redes_1">
+                    <div class="col-1"></div>
+                    <div class="col-10" id="div_redes_ong_1">
+                      
+                      <label for="redes_ong_instagram" id="lbl_instagram">Link do Instagram <img src="img/icons/instagram_6422200.png" class="bi" width="20" height="20"></label>
+                      <p></p>
+                      <input type="url" name="redes_ong_instagram" id="redes_ong_instagram">
+                      <p></p>
+                    </div>
+                    <div class="col-1"></div>
+                  </div>
+        
+        
+        
+        
+                  <div class="row" id="row_redes_2">
+                    <div class="col-1"></div>
+                      <div class="col-10">
+                        <label for="redes_ong_facebook" id="lbl_facebook">Link do Facebook <img src="img/icons/social_12942738.png" class="bi" width="20" height="20"></label>
+                        <p></p>
+                        <input type="url" name="redes_ong_facebook" id="redes_ong_facebook">
+                        <p></p>
+                      </div>  
+                      <div class="col-1"></div>
+                  </div>
+        
+        
+        
+        
+                  <div class="row" id="row_redes_3">
+                    <div class="col-1"></div>
+                    <div class="col-10" id="div_redes_ong_2">
+                      <label for="redes_ong_x" id="lbl_twitter">Link do X <img src="img/icons/twitter_5968830.png" class="bi" width="20" height="20"></label>
+                      <p></p>
+                      <input type="url" name="redes_ong_x" id="redes_ong_x">
+                      <p></p>
+                    </div>
+                    <div class="col-1"></div>
+                  </div>
+        
+        
+        
+        
+                    <div class="row" id="row_redes_4">
+                      <div class="col-1"></div>
+                          <div class="col-10" id="div_redes_ong_2">
+                          <label for="redes_ong_linkedin" id="lbl_linkedin">Link do Linkedin <img src="img/icons/linkedin_3536569.png" width="20" height="20"></label>
+                          <p></p>
+                          <input type="url" name="redes_ong_linkedin" id="redes_ong_linkedin">
+                          <p></p>
+                          </div>
+                          <div class="col-1"></div>
+                    </div>  
+                  
+                   
+                
+        
+        
+                    <p id="par_sep">******************************</p>
+        
+        
+        
+        
+        
+        
+        
+                 <!--logo ONG-->
+                 
+                 <div class="row" id="row_logo_entidade">
+                  <h3>Coloque a logo da sua ONG</h3>
+                  <div class="col-1"></div>
+                  <div class="col-10" id="div_logo_entidade">
+                    <p></p>
+                    <input type="file" name="logo_entidade" id="logo_entidade">
+                  </div>
+                  <div class="col-1">
+        
+                  </div>
+                  
+        
+        
+        
+                </div>
+                 
+                <p id="par_sep">******************************</p>
+
+                <!--Divisão Seleção da causa principal-->
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10" id="div_esc_causa">
+                      <label for="esc_causa">Escolha a causa principal da sua organização</label>
+                      <p></p>
+                      <input type="radio" name="esc_causa" id="esc_causa_amb" value="Ambiental">Ambiental                 
+                      <input type="radio" name="esc_causa" id="esc_causa_ani" value="Animal">Animal                    
+                      <input type="radio" name="esc_causa" id="esc_causa_edu" value="Educação">Educação
+                      <p></p>
+                      <input type="radio" name="esc_causa" id="esc_causa_sau" value="Saúde">Saúde
+                      <input type="radio" name="esc_causa" id="esc_causa_soc" value="Social">Social
+                      <input type="radio" name="esc_causa" id="esc_causa_out" value="Outra">Outra
+                      <p></p>
+                    </div>
+                      <div class="col-1"></div>
+                    </div>
+          
+          
+                      <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-10">
+                          <label for="esc_causa">Se selecionou a opção "Outra", digite aqui:</label>
+                          <p></p>
+                          <input type="text" name="esc_causa" id="esc_causa_out_txt">
+                        </div>  
+                        <div class="col-1"></div>
+                      </div>
+                  
+          
+        
+        
+                 <!--Botão continuar-->
+        
+               
+        
+                  <div class="row" id="div_row_btn_continuar_ong_2">
+                    <div class="col-1">
+            
+            
+                    </div>
+                    <div class="col-10" id="div_btn_continuar_ong_2">
+                      <button id="btn_continuar_ong_2" onclick="window.location.href='index.html'" >  Continuar </button>
+                      
+            
+                    </div>
+                    <div class="col-1">
+            
+            
+                    </div>
+                    
+                  </div>
+        
+        
+        
+        
+        
+        
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+        </main>
+
+<!--Footer-->
+
+<footer class="py-5" id="footer">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3" id="logos">
+        
+        <ul class="nav flex-column" id="logos">
+          <img src="img/MUXN_logo1.png" alt="Logo MUXN" width="100" id="logo_muxn" border="1" >
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3" id="logos">
+        
+        <ul class="nav flex-column" id="logos">
+          <img src="img/LOGO ONGLINK 1.png" alt="Logo ONGLink" width="100" id="logo_onglink" border="1">
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3" id="links_footer">
+        <a href="legislacao.html"><p> Legislação</p></a>
+        <a href="nossa_historia.html"><p> Nossa história</p></a>
+        <a href="parceiros.html"><p> Parceiros</p></a>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscreva na nossa newsletter</h5>
+          <p>Receba as novidades diretamente pelo seu email.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top" id="redes_sociais">
+      <p>&copy; 2024 MUXN Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="img/icons/twitter_5968830.png" class="bi" width="24" height="24"><use xlink:href="#twitter"/></img></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="img/icons/instagram_6422200.png" class="bi" width="24" height="24"><use xlink:href="#instagram"/></img></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="img/icons/social_12942738.png" class="bi" width="24" height="24"><use xlink:href="#facebook"/></img></a></li>
+      </ul>
+    </div>
+  </footer>
+
+      <script src="JS/js/bootstrap.bundle.min.js"></script>
+      <script src="JS/scripts.js"></script>
+  </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

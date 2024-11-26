@@ -1,0 +1,281 @@
+/*cadastro_main*/
+
+header#header_header.py-3.mb-3.border-bottom{
+
+    margin-bottom: 0px;
+    
+    }
+    
+    body
+    {
+        background-color:#84a454;
+    }
+    
+    
+    
+    main{
+            background-color: white ;
+    
+    
+            justify-content: center;
+            justify-items: center;
+            text-align: center;
+    
+    
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+    
+            
+            margin-bottom: 1%;
+    
+    
+           
+        }
+    
+    
+    
+        #par_sep{
+    
+            margin-bottom: 2%;
+            margin-top: 2%;
+            
+            
+            
+            }
+
+/*cadastro_1.HTML*/
+
+/*Dentro container*/
+
+#div_cad_container{
+
+
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+
+    padding-left: 2%;
+    padding-right: 2%;
+
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+
+    max-width: 50%;
+
+    margin-bottom: 1% ;
+    margin-top: 1%;
+
+   
+
+}
+
+
+/*Divisão dentro container*/
+
+#nome_entidade{
+
+    width: 300px;
+
+    text-align: center;
+}
+
+#reg_cnpj, #email{
+
+width: 100%px;
+text-align: center;
+}
+
+
+#pes_resp_entidade {
+
+width: 100%;
+
+text-align: center;
+}
+
+#cpf_pes_resp_entidade{
+
+width: 120px;
+text-align: center;
+}
+
+#div_entidade{
+
+margin-left: 0%;
+margin-right: 0%;
+padding-left: 0%;
+padding-right: 0%;
+
+
+}
+
+
+/*endereço*/
+
+#end_principal{
+
+width: 250px;
+text-align: center;
+}
+#end_complemento{
+
+width: 150px;
+text-align: center;
+}
+
+
+#num_end_principal{
+
+width: 50%;
+text-align: center;
+}
+
+#cidade, #estado {
+
+width: 100%;
+text-align: center;
+}
+
+#cep{
+
+    width: 85px;
+    text-align: center;
+}
+
+#estado{
+
+border-color: black;
+
+}
+
+#email{
+
+    max-width: 100%;
+    text-align: center;
+}
+
+
+/*telefone*/
+
+#tel_1, #tel_2{
+
+width: 90%;
+text-align: center;
+
+}
+
+
+
+/*sobre*/
+
+#txt_sobre_entidade{
+margin-bottom: 10px;
+
+
+
+}
+
+#div_sobre_entidade{
+
+margin-left: 0%;
+margin-right: 0%;
+
+padding-bottom: 10px;
+
+ 
+
+
+}
+
+#div_txt_sobre_entidade{
+
+
+margin-right: 1%;
+padding-right: 1%;
+
+margin-bottom: 1%;
+
+
+
+}
+
+
+
+
+/*botão continuar */
+#div_row_btn_continuar_entidade{
+
+margin-top: 10px;
+margin-bottom: 10px;
+
+
+
+}
+
+
+
+/*Cadastro_2.html*/
+#div_tipo_entidade{
+
+width: 300px;
+
+
+
+}
+
+#empresa, #ong{
+
+    margin-left: 5%;
+    margin-right: 4px;
+
+}
+
+#esc_causa_amb, #esc_causa_ani,#esc_causa_edu,#esc_causa_sau,#esc_causa_soc, #esc_causa_out{
+
+    margin-left: 5%;
+    margin-right: 4px;
+    
+    
+    }
+    
+input#esc_causa_out_txt{
+
+width: 400px;
+
+}
+
+
+
+
+/*Input caixas de texto redes*/
+input#redes_ong_instagram,input#redes_ong_facebook,input#redes_ong_x,input#redes_ong_linkedin{
+    
+    width: 400px;
+
+
+
+}
+
+#row_logo_entidade{
+
+    margin-top: 3%;
+    
+    
+    }
+
+
+
+#div_row_btn_continuar_ong_2{
+
+   
+    margin-top: 50px;
+    margin-bottom: 10px;
+        
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    
+    
+}
