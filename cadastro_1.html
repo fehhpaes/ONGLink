@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="MUXN Company">
-        <title>ONGLink - Cadastrar empresa</title>
+        <title> ONGLink - Cadastrar </title>
     
         
       <!--Link Bootstrap-->
@@ -15,8 +15,11 @@
         <link href="CSS/header_alt.css" rel="stylesheet">
         <link href="CSS/menu.css" rel="stylesheet" >
         <link href="CSS/cadastro.css" rel="stylesheet">
-        <link href="CSS/footer.css" rel="stylesheet">
+        <link href="CSS/footer.css" rel="stylesheet" >
         <link href="CSS/body.css" rel="stylesheet">
+        <link href="CSS/main.css" rel="stylesheet">
+
+
 
   </head>
 
@@ -48,7 +51,9 @@
         <main>
 
             <div class="container" id="div_cad_container">
+
               <h1>Cadastre sua Entidade</h1>
+              <form action="/submit" method="post">
                 <!--linha 1, nome entidade-->
                 <div class="row">
                     <div class="col-1"></div>
@@ -73,7 +78,7 @@
                   <div class="col-5" >
                     <label for="reg_cnpj">Registro CNPJ</label>
                     <p></p>
-                    <input type="text" name="reg_cnpj" id="reg_cnpj" placeholder="12.345.678/0001-00" >
+                    <input type="text" name="reg_cnpj" id="reg_cnpj" placeholder="12.345.678/0001-00"  required>
                   </div>
                   
                 <div class="col-1">
@@ -82,7 +87,7 @@
                 <div class="col-4">
                   <label for="email">E-mail</label>
                   <p></p>
-                  <input type="email" name="email" id="email" placeholder="Digite seu e-mail.." >
+                  <input type="email" name="email" id="email" placeholder="Digite seu e-mail.." required >
                 </div>
                 <div class="col-1"></div>
               </div>
@@ -276,7 +281,7 @@
               <p id="par_sep"></p>
         
   
-  
+            
   
               <!--Botão continuar-->
   
@@ -286,7 +291,7 @@
   
             </div>
             <div class="col-10" id="div_btn_continuar_entidade">
-              <button type="submit" id="btn_continuar" onclick="window.location.href='index.html'" > Continuar </button>
+              <button type="submit" id="btn_continuar" onclick="window.location.href='cadastro_2.html'" > Continuar </button>
   
             </div>
             <div class="col-1">
@@ -297,7 +302,7 @@
           </div>
 
 
-
+        </form>
 
 
 
@@ -328,49 +333,49 @@
 <!--Footer-->
 
 <footer class="py-5" id="footer">
-    <div class="row">
-      <div class="col-6 col-md-2 mb-3" id="logos">
-        
-        <ul class="nav flex-column" id="logos">
-          <img src="img/MUXN_logo1.png" alt="Logo MUXN" width="100" id="logo_muxn" border="1" >
-        </ul>
-      </div>
-
-      <div class="col-6 col-md-2 mb-3" id="logos">
-        
-        <ul class="nav flex-column" id="logos">
-          <img src="img/LOGO ONGLINK 1.png" alt="Logo ONGLink" width="100" id="logo_onglink" border="1">
-        </ul>
-      </div>
-
-      <div class="col-6 col-md-2 mb-3" id="links_footer">
-        <a href="legislacao.html"><p> Legislação</p></a>
-        <a href="nossa_historia.html"><p> Nossa história</p></a>
-        <a href="parceiros.html"><p> Parceiros</p></a>
-      </div>
-
-      <div class="col-md-5 offset-md-1 mb-3">
-        <form>
-          <h5>Subscreva na nossa newsletter</h5>
-          <p>Receba as novidades diretamente pelo seu email.</p>
-          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-            <label for="newsletter1" class="visually-hidden">Email address</label>
-            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-            <button class="btn btn-primary" type="button">Subscribe</button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top" id="redes_sociais">
-      <p>&copy; 2024 MUXN Company, Inc. All rights reserved.</p>
-      <ul class="list-unstyled d-flex">
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="img/icons/twitter_5968830.png" class="bi" width="24" height="24"><use xlink:href="#twitter"/></img></a></li>
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="img/icons/instagram_6422200.png" class="bi" width="24" height="24"><use xlink:href="#instagram"/></img></a></li>
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="img/icons/social_12942738.png" class="bi" width="24" height="24"><use xlink:href="#facebook"/></img></a></li>
+  <div class="row">
+    <div class="col-6 col-md-2 mb-3" id="logos">
+      
+      <ul class="nav flex-column" id="logos">
+        <img src="img/MUXN_logo1.png" alt="Logo MUXN" width="100" id="logo_muxn" border="1" >
       </ul>
     </div>
-  </footer>
+
+    <div class="col-6 col-md-2 mb-3" id="logos">
+      
+      <ul class="nav flex-column" id="logos">
+        <img src="img/LOGO ONGLINK 1.png" alt="Logo ONGLink" width="100" id="logo_onglink" border="1">
+      </ul>
+    </div>
+
+    <div class="col-6 col-md-2 mb-3" id="links_footer">
+      <a href="legislacao.html"><p> Legislação</p></a>
+      <a href="nossa_historia.html"><p> Nossa história</p></a>
+      <a href="parceiros.html"><p> Parceiros</p></a>
+    </div>
+
+    <div class="col-md-5 offset-md-1 mb-3">
+      <form>
+        <h5>Subscreva na nossa newsletter</h5>
+        <p>Receba as novidades diretamente pelo seu email.</p>
+        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+          <label for="newsletter1" class="visually-hidden">Email address</label>
+          <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+          <button class="btn btn-primary" type="button">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top" id="redes_sociais">
+    <p>&copy; 2024 MUXN Company, Inc. All rights reserved.</p>
+    <ul class="list-unstyled d-flex">
+      <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="img/icons/twitter_5968830.png" class="bi" width="24" height="24"><use xlink:href="#twitter"/></img></a></li>
+      <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="img/icons/instagram_6422200.png" class="bi" width="24" height="24"><use xlink:href="#instagram"/></img></a></li>
+      <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="img/icons/social_12942738.png" class="bi" width="24" height="24"><use xlink:href="#facebook"/></img></a></li>
+    </ul>
+  </div>
+</footer>
 
       <script src="JS/js/bootstrap.bundle.min.js"></script>
       <script src="JS/scripts.js"></script>
