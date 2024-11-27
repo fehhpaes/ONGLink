@@ -1,3 +1,48 @@
+#navbar_historia
+{
+    background-color: #2b3710c4;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+#navbar_historia li
+{
+    background-color: #637b30;
+    width: 250px;
+    height: 30px;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar_historia li:hover
+{
+    color: #4ccb00;
+}
+
+#fundo_navbar
+{
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#navbar_historia ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    padding: 0px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+
 #texto_historia h3, #texto_historia p, #lista_missao, #header_missao
 {
     background-color: #2b3710c4;
@@ -73,6 +118,7 @@ iframe
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .row
@@ -82,7 +128,7 @@ iframe
     align-items: center;
 }
 
-#sub_div_historia
+#sub_div_historia, #fundo_navbar
 {
     background-color: #283903a6;
 }
