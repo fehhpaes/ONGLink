@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário Responsivo</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .form-container {
+      background: #fff;
+      padding: 2rem;
+      border: 2px solid black;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h4 class="text-center mb-4">Cadastro</h4>
+    <form id="formulario" action="cadastro_2.html" method="GET" novalidate onsubmit="return validarFormulario()">
+      
+      <!-- Campo Nome -->
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" required>
+        <div class="invalid-feedback">Por favor, insira seu nome.</div>
+      </div>
+
+      <!-- Linha com Email e CNPJ -->
+      <div class="row">
+        <!-- Campo Email -->
+        <div class="col-md-6 mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+          <div class="invalid-feedback">Por favor, insira um email válido.</div>
+        </div>
+
+        <!-- Campo CNPJ -->
+        <div class="col-md-6 mb-3">
+          <label for="cnpj" class="form-label">CNPJ</label>
+          <input type="text" class="form-control" id="cnpj" name="cnpj" required>
+          <div class="invalid-feedback">Por favor, insira o CNPJ válido.</div>
+        </div>
+      </div>
+
+      <!-- Linha com Pessoa Responsável e CPF -->
+      <div class="row">
+        <!-- Campo Pessoa Responsável -->
+        <div class="col-md-6 mb-3">
+          <label for="pessoa_responsavel" class="form-label">Pessoa Responsável</label>
+          <input type="text" class="form-control" id="pessoa_responsavel" name="pessoa_responsavel" required>
+          <div class="invalid-feedback">Por favor, insira a pessoa responsável.</div>
+        </div>
+
+        <!-- Campo CPF -->
+        <div class="col-md-6 mb-3">
+          <label for="cpf" class="form-label">CPF</label>
+          <input type="text" class="form-control" id="cpf" name="cpf" required>
+          <div class="invalid-feedback">Por favor, insira o CPF válido.</div>
+        </div>
+      </div>
+
+      <!-- Linha com Endereço Principal e Complemento -->
+      <div class="row">
+        <!-- Campo Endereço Principal -->
+        <div class="col-md-6 mb-3">
+          <label for="endereco" class="form-label">Endereço Principal</label>
+          <input type="text" class="form-control" id="endereco" name="endereco" required>
+          <div class="invalid-feedback">Por favor, insira o endereço principal.</div>
+        </div>
+
+        <!-- Campo Complemento -->
+        <div class="col-md-6 mb-3">
+          <label for="complemento" class="form-label">Complemento</label>
+          <input type="text" class="form-control" id="complemento" name="complemento">
+          <div class="invalid-feedback">Por favor, insira o complemento, se necessário.</div>
+        </div>
+      </div>
+
+      <!-- Linha com Cidade, Estado e CEP -->
+      <div class="row">
+        <!-- Campo Cidade -->
+        <div class="col-md-4 mb-3">
+          <label for="cidade" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="cidade" name="cidade" required>
+          <div class="invalid-feedback">Por favor, insira a cidade.</div>
+        </div>
+
+        <!-- Campo Estado -->
+        <div class="col-md-4 mb-3">
+          <label for="estado" class="form-label">Estado</label>
+          <select class="form-select" id="estado" name="estado" required>
+            <option value="">Selecione o estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+          <div class="invalid-feedback">Por favor, selecione o estado.</div>
+        </div>
+
+        <!-- Campo CEP -->
+        <div class="col-md-4 mb-3">
+          <label for="cep" class="form-label">CEP</label>
+          <input type="text" class="form-control" id="cep" name="cep" required>
+          <div class="invalid-feedback">Por favor, insira o CEP válido.</div>
+        </div>
+      </div>
+
+      <!-- Linha com Telefones -->
+      <div class="row">
+        <!-- Campo Telefone 1 -->
+        <div class="col-md-6 mb-3">
+          <label for="telefone1" class="form-label">Telefone 1</label>
+          <input type="tel" class="form-control" id="telefone1" name="telefone1" required>
+          <div class="invalid-feedback">Por favor, insira o telefone 1 válido.</div>
+        </div>
+
+        <!-- Campo Telefone 2 -->
+        <div class="col-md-6 mb-3">
+          <label for="telefone2" class="form-label">Telefone 2</label>
+          <input type="tel" class="form-control" id="telefone2" name="telefone2">
+          <div class="invalid-feedback">Por favor, insira o telefone 2, se necessário.</div>
+        </div>
+      </div>
+
+      <!-- Campo Textarea para Observações -->
+      <div class="mb-3">
+        <label for="observacoes" class="form-label">Observações</label>
+        <textarea class="form-control" id="observacoes" name="observacoes" rows="4" required></textarea>
+        <div class="invalid-feedback">Por favor, insira observações, se necessário.</div>
+      </div>
+
+      <!-- Botão -->
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Link para o arquivo JavaScript -->
+  <script src="JS/scripts.js"></script>
+</body>
+</html>

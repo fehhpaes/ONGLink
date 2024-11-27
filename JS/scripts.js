@@ -87,3 +87,66 @@
 	 `;
    }
  });
+
+
+
+
+ //validação compos cadastro_1.html
+// Função de validação personalizada
+function validarFormulario() {
+  var form = document.getElementById("formulario");
+  var inputs = form.querySelectorAll("input, select, textarea");
+
+  var isValid = true;
+
+  inputs.forEach(function(input) {
+    if (input.required && !input.value) {
+      input.classList.add("is-invalid");
+      isValid = false;
+    } else {
+      input.classList.remove("is-invalid");
+    }
+  });
+
+  // Validando CNPJ, CPF, CEP e Telefones com regex
+  var regexCNPJ = /^\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}$/;
+  var regexCPF = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
+  var regexCEP = /^\d{5}-\d{3}$/;
+  var regexTelefone = /^\(\d{2}\) \d{4,5}-\d{4}$/;
+
+  // Validando CNPJ
+  var cnpj = document.getElementById("cnpj");
+  if (cnpj.value && !regexCNPJ.test(cnpj.value)) {
+    cnpj.classList.add("is-invalid");
+    isValid = false;
+  }
+
+  // Validando CPF
+  var cpf = document.getElementById("cpf");
+  if (cpf.value && !regexCPF.test(cpf.value)) {
+    cpf.classList.add("is-invalid");
+    isValid = false;
+  }
+
+  // Validando CEP
+  var cep = document.getElementById("cep");
+  if (cep.value && !regexCEP.test(cep.value)) {
+    cep.classList.add("is-invalid");
+    isValid = false;
+  }
+
+  // Validando Telefones
+  var telefone1 = document.getElementById("telefone1");
+  if (telefone1.value && !regexTelefone.test(telefone1.value)) {
+    telefone1.classList.add("is-invalid");
+    isValid = false;
+  }
+
+  var telefone2 = document.getElementById("telefone2");
+  if (telefone2.value && !regexTelefone.test(telefone2.value)) {
+    telefone2.classList.add("is-invalid");
+    isValid = false;
+  }
+
+  return isValid;
+}
