@@ -21,6 +21,7 @@
 #navbar_historia li:hover
 {
     color: #4ccb00;
+    font-weight: 700;
 }
 
 #fundo_navbar
