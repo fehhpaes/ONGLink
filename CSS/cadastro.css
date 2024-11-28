@@ -75,63 +75,15 @@ header#header_header.py-3.mb-3.border-bottom{
 
 /*Divisão dentro container*/
 
-#nome_entidade{
 
-    width: 300px;
 
-    text-align: center;
-}
-
-#reg_cnpj, #email{
+#cnpj, #email, #cpf{
 
 width: 100%px;
 text-align: center;
 }
 
 
-#pes_resp_entidade {
-
-width: 100%;
-
-text-align: center;
-}
-
-#cpf_pes_resp_entidade{
-
-width: 120px;
-text-align: center;
-}
-
-#div_entidade{
-
-margin-left: 0%;
-margin-right: 0%;
-padding-left: 0%;
-padding-right: 0%;
-
-
-}
-
-
-/*endereço*/
-
-#end_principal{
-
-width: 250px;
-text-align: center;
-}
-#end_complemento{
-
-width: 150px;
-text-align: center;
-}
-
-
-#num_end_principal{
-
-width: 50%;
-text-align: center;
-}
 
 #cidade, #estado {
 
@@ -141,29 +93,28 @@ text-align: center;
 
 #cep{
 
-    width: 85px;
+    width: 100%;
     text-align: center;
 }
 
-#estado{
 
-border-color: black;
 
-}
 
-#email{
-
-    max-width: 100%;
-    text-align: center;
-}
 
 
 /*telefone*/
 
-#tel_1, #tel_2{
+#telefone1, #telefone2{
 
-width: 90%;
+width: 75%;
 text-align: center;
+
+}
+#div_tel{
+
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
 
 }
 
@@ -173,30 +124,6 @@ text-align: center;
 
 #txt_sobre_entidade{
 margin-bottom: 10px;
-
-
-
-}
-
-#div_sobre_entidade{
-
-margin-left: 0%;
-margin-right: 0%;
-
-padding-bottom: 10px;
-
- 
-
-
-}
-
-#div_txt_sobre_entidade{
-
-
-margin-right: 1%;
-padding-right: 1%;
-
-margin-bottom: 1%;
 
 
 
@@ -243,7 +170,7 @@ width: 300px;
     
 input#esc_causa_out_txt{
 
-width: 400px;
+width: 25%;
 
 }
 
@@ -317,7 +244,7 @@ text-align: center;
 
 
 
-  /*tela cadstro_1.html alt*/
+  /*tela cadastro_1.html alt*/
 
 
 
@@ -383,12 +310,6 @@ input.form-control {
 
 
 
-
-
-
-
-
-
   div.col-10.text-center{
 
  
@@ -405,4 +326,27 @@ input.form-control {
     text-align: center;
 
 
+  }
+
+
+  #div_cep{
+
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+
+  }
+
+  /* Estilização de bordas pretas */
+  input.form-control, textarea.form-control, select.form-select {
+    border: 1px solid black;
+  }
+
+  /* Feedback visual */
+  .is-invalid {
+    border-color: red;
+  }
+
+  .is-valid {
+    border-color: green;
   }

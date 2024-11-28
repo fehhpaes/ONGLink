@@ -99,18 +99,21 @@
             <!-- Campo Email -->
             <div class="col-md-6 mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" name="email" required>
+              <input type="email" class="form-control" id="email" name="email" placeholder="entidade@entidade.com.br" required>
               <div class="invalid-feedback">Por favor, insira um email válido.</div>
             </div>
     
             <!-- Campo CNPJ -->
             <div class="col-md-6 mb-3">
               <label for="cnpj" class="form-label">CNPJ</label>
-              <input type="text" class="form-control" id="cnpj" name="cnpj" required>
+              <input type="text" class="form-control" id="cnpj" name="cnpj" placeholder="12.345.678/0001-00" required>
               <div class="invalid-feedback">Por favor, insira o CNPJ válido.</div>
             </div>
           </div>
     
+
+
+
           <!-- Linha com Pessoa Responsável e CPF -->
           <div class="row">
             <!-- Campo Pessoa Responsável -->
@@ -123,7 +126,7 @@
             <!-- Campo CPF -->
             <div class="col-md-6 mb-3">
               <label for="cpf" class="form-label">CPF</label>
-              <input type="text" class="form-control" id="cpf" name="cpf" required>
+              <input type="text" class="form-control" id="cpf" name="cpf" placeholder="123.456.789-00" required>
               <div class="invalid-feedback">Por favor, insira o CPF válido.</div>
             </div>
           </div>
@@ -155,7 +158,7 @@
             </div>
     
             <!-- Campo Estado -->
-            <div class="col-md-4 mb-3">
+            <div class="col-md-5 mb-4">
               <label for="estado" class="form-label">Estado</label>
               <select class="form-select" id="estado" name="estado" required>
                 <option value="">Selecione o estado</option>
@@ -191,9 +194,9 @@
             </div>
     
             <!-- Campo CEP -->
-            <div class="col-md-4 mb-3">
+            <div class="col-md-3 mb-2" id="div_cep">
               <label for="cep" class="form-label">CEP</label>
-              <input type="text" class="form-control" id="cep" name="cep" required>
+              <input type="text" class="form-control" id="cep" name="cep" placeholder="00000-000" required>
               <div class="invalid-feedback">Por favor, insira o CEP válido.</div>
             </div>
           </div>
@@ -201,16 +204,16 @@
           <!-- Linha com Telefones -->
           <div class="row">
             <!-- Campo Telefone 1 -->
-            <div class="col-md-6 mb-3">
+            <div class="col-md-6 mb-3" id="div_tel">
               <label for="telefone1" class="form-label">Telefone 1</label>
-              <input type="tel" class="form-control" id="telefone1" name="telefone1" required>
+              <input type="tel" class="form-control" id="telefone1" name="telefone1" placeholder="(15)000000000" required>
               <div class="invalid-feedback">Por favor, insira o telefone 1 válido.</div>
             </div>
     
             <!-- Campo Telefone 2 -->
-            <div class="col-md-6 mb-3">
+            <div class="col-md-6 mb-3" id="div_tel">
               <label for="telefone2" class="form-label">Telefone 2</label>
-              <input type="tel" class="form-control" id="telefone2" name="telefone2">
+              <input type="tel" class="form-control" id="telefone2" name="telefone2" placeholder="(15)000000000">
               <div class="invalid-feedback">Por favor, insira o telefone 2, se necessário.</div>
             </div>
           </div>
