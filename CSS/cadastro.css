@@ -362,3 +362,47 @@ text-align: center;
     
   }
 
+/* Adiciona borda preta aos inputs */
+input.form-control {
+    border: 1px solid black;
+  }
+  
+  /* Adiciona borda preta ao textarea */
+  textarea.form-control {
+    border: 1px solid black;
+  }
+  
+  /* Para estilizar o select com a borda preta */
+  select.form-select {
+    border: 1px solid black;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  div.col-10.text-center{
+
+ 
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+
+
+  }
+  #row_out_causa{
+
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+
+
+  }

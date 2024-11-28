@@ -237,6 +237,7 @@ radioForm.addEventListener('change', (event) => {
         <div class="row">
             <div class="col-12 text-center">
                 <h3>Campo para Empresa</h3>
+                <p id="par_sep">******************************</p>
                 <label for="logo_entidade">Logo da empresa (obrigatório):</label><br>
                 <input type="file" id="logo_entidade" name="logo_entidade" accept="image/*" class="form-control" required><br><br>
                 
@@ -250,6 +251,7 @@ radioForm.addEventListener('change', (event) => {
         <div class="row">
             <div class="col-12 text-center">
                 <h3>Campos para ONG</h3>
+                <p id="par_sep">******************************</p>
                 <label for="esc_causa">Escolha a causa principal da sua organização:</label><br>
                 <input type="radio" name="esc_causa" id="esc_causa_amb" value="Ambiental"> Ambiental
                 <input type="radio" name="esc_causa" id="esc_causa_ani" value="Animal"> Animal
@@ -260,14 +262,22 @@ radioForm.addEventListener('change', (event) => {
             </div>
         </div>
         <div class="row" id="row_out_causa" style="display: none;">
-            <div class="col-12 text-center">
+        <div class="col-1 text-center" >
+                
+            </div>
+            <div class="col-10 text-center" >
                 <label for="esc_causa_out_txt">Se selecionou a opção "Outra", digite aqui:</label><br>
+                <p id="par_sep"></p>
                 <input type="text" name="esc_causa_out_txt" id="esc_causa_out_txt" class="form-control">
+            </div>
+            <div class="col-1 text-center" >
+                
             </div>
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                <label for="logo_entidade">Logo da entidade (obrigatório):</label><br>
+            <p id="par_sep">******************************</p>
+                <label for="logo_entidade">Insira seu logo (obrigatório):</label><br>
                 <input type="file" id="logo_entidade" name="logo_entidade" accept="image/*" class="form-control" required>
             </div>
         </div>
