@@ -30,6 +30,7 @@ main
 
 #navbar li:hover
 {
+    background-color: #4a5c24;
     color: #4ccb00;
     font-weight: 700;
     text-decoration: underline;
@@ -59,11 +60,10 @@ main
 {
     background-color: #283903a6;
     color: white;
-    padding-top: 3px;
-    padding-bottom: 50px;
+    padding: 30px;
 }
 
-#div_parceiros h1
+#div_parceiros h2
 {
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +72,7 @@ main
     background-color: #2b3710c4;
     border-radius: 30px;
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 10px;
     width:fit-content;
 }
 
