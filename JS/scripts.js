@@ -12,10 +12,8 @@
    if (selectedValue === '2') { // Empresa
 	 dynamicFields.innerHTML = `
 	 <p id="par_sep">******************************</p>
-	   <h3>Campos para Empresa</h3>
-	   <label for="empresaField1">Tipo de contrato social:</label>
-	   <p></p>
-	   <input type="text" id="empresaField1" name="empresaField1"><br><br>
+	   <h3>Campo para Empresa</h3>
+	   
 	   
 	   <label for="empresaField2">Area de atuação:</label>
 	   <p></p>
