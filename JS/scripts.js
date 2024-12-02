@@ -182,6 +182,19 @@ radioForm.addEventListener('change', (event) => {
             <div class="col-1 text-center" >
                 
             </div>
+
+            <div class="col-10">
+            <label for="ata_criacao">Ata de Criação (Somente .pdf)</label>
+            <input type="file" name="ata_criacao" id="ata_criacao" accept=".pdf" class="form-control" required>
+
+            </div>       
+            
+            <div class="col-10">
+            <label for="est_social">Estatuto Social (Somente .pdf)</label>
+            <input type="file" name="est_social" id="est_social" accept=".pdf" class="form-control" required>
+
+            </div>
+
         </div>
         <div class="row">
             <div class="col-12 text-center">
